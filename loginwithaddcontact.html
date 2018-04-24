@@ -1,0 +1,70 @@
+﻿//main login page + add contact option
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>//THIS IS THE MAIN LOGIN PAGE -</title>
+<link rel="stylesheet" type="text/css" href="../../Users/John/Documents/TROY/CS4443%20-%20Web%20Dev/project/pycalcss.css">
+
+</head>
+
+<body>
+
+Calendr - A Tool For Keeping Up With The Times
+
+<form action="verifyloginPHP.php" method="POST">
+	<br>
+	
+	Account Login:
+	
+	<br> <br> <br>
+	
+	Username:	 <input type='text' name='username'> <br>
+	Password:	 <input type='text' name='password'> <br>
+
+	
+	<input type="submit" onclick="document.forms[0].submit()">	
+
+</form>
+
+<form action="createaccountPHP.php" method="POST">
+	
+	<br> <br> <br>
+	
+	Create Account:
+	
+	<br> <br> <br>
+	
+	Username:	 <input type='text' name='username'> <br>
+	Password:	 <input type='text' name='password'> <br>
+
+	<input type="submit" onclick="document.forms[1].submit()">
+	
+
+ </form>
+
+
+<form action="addcontact.php" method="POST">
+	<br>
+	
+	Add Contact - Enter the User's Username:
+	
+	<br> <br> <br>
+	
+	Username:	 <input type='text' name='Username'> <br>
+	Password:	 <input type='text' name='password'> <br>
+	Contact Name:	 <input type='text' name='ContactName'> <br>
+	Contact Number:	 <input type='text' name='ContactNumber'> <br>
+
+
+
+	<input type="submit" onclick="document.forms[2].submit()">	
+
+</form>
+
+</body>
+
+</html>
